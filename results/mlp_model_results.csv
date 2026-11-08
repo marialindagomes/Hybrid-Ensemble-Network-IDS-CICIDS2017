@@ -1,0 +1,2 @@
+Model,Accuracy,Precision,Recall,F1_Score,Training_Time_Seconds,Training_Time_Minutes,Inference_Time_Seconds,Latency_Per_Sample_ms,Model_Size_MB,Parameters,Training_Samples,Test_Samples,Features,Classes
+Lightweight MLP,0.9693906696286892,0.9732717425191734,0.9693906696286892,0.9702910675899401,27.14442669999994,0.45240711166666564,1.2872544000000516,0.002553265629958846,0.07870292663574219,4559,500000,504160,30,15

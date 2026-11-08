@@ -1,0 +1,12 @@
+Study,Dataset,Approach,Classification,Metric,Accuracy_Percent,Precision_Percent,Recall_Percent,F1_Percent,Direct_Comparison
+Proposed Method,CICIDS2017,LR + DT + RF + XGBoost Soft Voting,15-class,Accuracy,99.7302,99.72635743511164,99.73024436686768,99.72597073899568,Yes
+Hizal et al.,NSL-KDD,Conv1D + GRU,Binary,Accuracy,99.88,,,,No
+Hizal et al.,NSL-KDD,Conv1D + GRU,Five-class,Accuracy,99.86,,,,No
+Aburomman et al.,KDD99,SVM-kNN-PSO / LUS-PSO,Ensemble,Average Accuracy,92.9,,,,No
+Ambusaidi et al.,KDD Cup 99,FMIFS + LSSVM,IDS classification,Accuracy,99.79,,,,No
+Ambusaidi et al.,NSL-KDD,FMIFS + LSSVM,IDS classification,Accuracy,99.91,,,,No
+Ambusaidi et al.,Kyoto 2006+,FMIFS + LSSVM,IDS classification,Accuracy,99.77,,,,No
+Qazi et al.,CICIDS2018,CNN + Deep RNN (HDLNIDS),Attack detection,Average Accuracy,98.9,,,,No
+Verma & Ranga,CIDDS-001 / UNSW-NB15 / NSL-KDD,"CART, RF, XGB and ensemble ML",Supervised IDS,Sensitivity,97.31,,,,No
+Al Lail et al.,CICIDS2017,RF + SMOTE,Attack detection,Macro F1,97.0,,,97.0,No
+Khan et al.,ToN-IoT,RNN-GRU,Binary network-flow,Accuracy,99.0,,,,No

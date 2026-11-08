@@ -1,0 +1,111 @@
+RESULTS AND DISCUSSION
+
+Overall Performance
+
+The proposed four-classifier soft-voting ensemble, consisting of
+Logistic Regression, Decision Tree, Random Forest, and XGBoost,
+achieved an accuracy of 9973.0200%,
+precision of 9972.6400%,
+recall of 9973.0200%, and F1 score of
+9972.6000% on the untouched CICIDS2017 test set.
+
+Among the individual classifiers, Random Forest achieved an
+accuracy of 9972.0900% and an F1 score of
+9971.7900%. The proposed hybrid therefore provided an
+accuracy improvement of 0.9300 percentage
+points over Random Forest and an F1 improvement of
+0.8100 percentage points.
+
+Although the improvement over Random Forest is numerically small,
+the ablation analysis provides evidence that classifier
+combinations can produce incremental performance gains. In
+particular, the RF + XGB combination achieved an accuracy of
+99.7283% and the highest F1 score of
+99.7272% among the evaluated ablation
+configurations.
+
+Ablation Study
+
+The ablation study evaluated all single-classifier, two-classifier,
+three-classifier, and four-classifier combinations. The highest
+accuracy was obtained by the complete LR + DT + RF + XGB
+combination, with an accuracy of
+99.7300% and an F1 score of
+99.7258%.
+
+The RF + XGB configuration achieved the highest F1 score,
+99.7272%, while using only two classifiers.
+This indicates that increasing ensemble size does not necessarily
+produce a monotonic improvement in every evaluation metric.
+However, the four-classifier configuration achieved the highest
+accuracy and was therefore retained as the proposed model.
+
+Comparison with Lightweight Deep Learning Baseline
+
+The lightweight MLP baseline achieved an accuracy of
+9693.9100% and an F1 score of
+9702.9100%.
+
+The proposed hybrid improved accuracy by
+279.1100 percentage points and F1 score by
+269.6900 percentage points compared with the
+lightweight MLP.
+
+The MLP required only 0.45 minutes for training,
+whereas the proposed hybrid required 34.45 minutes.
+The hybrid therefore required approximately
+76.15 times the MLP training time.
+
+For inference, the hybrid required 12.1808 seconds
+for the evaluated test set, compared with 1.2873
+seconds for the MLP. The corresponding per-sample latency was
+0.024161 ms for the hybrid and
+0.002553 ms for the MLP.
+
+The hybrid model also required substantially more storage,
+with a model size of 859.98 MB compared with
+0.0787 MB for the MLP. These results demonstrate a clear
+accuracy-computational-cost trade-off between the proposed
+ensemble and the lightweight deep-learning baseline.
+
+Computational Cost
+
+The proposed ensemble required 34.45 minutes
+for training and 12.1808 seconds for inference
+on the evaluated test set. Its measured latency was
+0.024161 ms per sample.
+
+The computational overhead is primarily associated with combining
+four classifiers and retaining the trained ensemble components.
+Therefore, although the hybrid provides the best overall accuracy
+among the evaluated configurations, its computational requirements
+should be considered when deployment resources are constrained.
+
+Literature Comparison
+
+The proposed method achieved 9973.0200% accuracy
+on the 15-class CICIDS2017 classification task. Results reported
+in previous studies were obtained using different datasets,
+classification settings, preprocessing procedures, class
+distributions, and evaluation protocols.
+
+Consequently, the literature results should not be interpreted as
+strict one-to-one comparisons. Instead, they provide contextual
+evidence regarding the performance of the proposed approach across
+different intrusion-detection settings.
+
+Limitations and Future Work
+
+The experimental results demonstrate strong performance on the
+CICIDS2017 benchmark; however, the proposed approach remains
+dependent on the characteristics of the evaluated dataset and
+preprocessing pipeline.
+
+The computational analysis also shows that the four-classifier
+ensemble has greater training time, inference cost, and model
+storage requirements than the lightweight MLP baseline.
+
+Future work should therefore investigate computationally efficient
+ensemble configurations, evaluation on additional contemporary
+network intrusion datasets, real-time traffic deployment, and
+robustness against previously unseen or zero-day attacks.

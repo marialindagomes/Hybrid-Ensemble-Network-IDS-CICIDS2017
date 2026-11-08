@@ -1,0 +1,7 @@
+Model,Category,Accuracy (%),Precision (%),Recall (%),F1 Score (%)
+Logistic Regression,Individual ML,9553.93,9605.4,9553.93,9559.97
+Decision Tree,Individual ML,9967.49,9967.88,9967.49,9967.42
+Random Forest,Individual ML,9972.09,9971.880000000001,9972.09,9971.79
+XGBoost,Individual ML,9967.55,9972.09,9967.55,9969.62
+Four-Classifier Hybrid,Proposed Ensemble,9973.02,9972.64,9973.02,9972.6
+Lightweight MLP,Deep Learning Baseline,9693.91,9732.720000000001,9693.91,9702.91

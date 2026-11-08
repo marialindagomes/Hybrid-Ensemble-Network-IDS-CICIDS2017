@@ -1,0 +1,7 @@
+Model,Training_Time_Seconds,Training_Time_Minutes,Inference_Time_Seconds,Latency_Per_Sample_ms,Model_Size_MB,Parameters
+Logistic Regression,483.571607,8.059527,0.195111,0.000387,,
+Decision Tree,38.201879,0.636698,0.101315,0.000201,,
+Random Forest,676.897425,11.281624,7.459377,0.014796,,
+XGBoost,538.727506,8.978792,4.604778,0.009134,,
+Four-Classifier Hybrid,2067.114064,34.451901,12.180759,0.024161,859.979492,
+Lightweight MLP,27.144427,0.452407,1.287254,0.002553,0.078703,4559

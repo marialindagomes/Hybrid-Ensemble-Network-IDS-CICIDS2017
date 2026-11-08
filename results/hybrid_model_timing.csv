@@ -1,0 +1,2 @@
+Model,Training_Time_Seconds,Training_Time_Minutes,Inference_Time_Seconds,Latency_Per_Sample_ms,Model_Size_MB,Test_Samples
+Four-Class Soft Voting Hybrid,2067.1140641,34.451901068333335,12.18075910000016,0.024160502816566485,859.9794921875,504160

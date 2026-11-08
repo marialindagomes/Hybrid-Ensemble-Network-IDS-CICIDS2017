@@ -1,0 +1,39 @@
+# Core Data Science & Array Processing
+
+numpy>=1.24.0
+
+pandas>=2.0.0
+
+
+
+# Machine Learning & Ensemble Models
+
+scikit-learn>=1.3.0
+
+xgboost>=2.0.0
+
+imbalanced-learn>=0.11.0
+
+
+
+# Deep Learning (For lightweight_mlp_ids.keras & compare_ml_dl.py)
+
+tensorflow>=2.15.0
+
+keras>=3.0.0
+
+
+
+# Model Serialization & Utilities
+
+joblib>=1.3.0
+
+scipy>=1.11.0
+
+
+
+# Visualization & Plotting
+
+matplotlib>=3.7.0
+
+seaborn>=0.12.0
